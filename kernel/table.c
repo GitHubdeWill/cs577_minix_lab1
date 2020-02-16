@@ -63,5 +63,8 @@ struct boot_image image[NR_BOOT_PROCS] = {
 {VM_PROC_NR,    "vm"    },
 {PFS_PROC_NR,   "pfs"   },
 {INIT_PROC_NR,  "init"  },
+// 577 edit start
+{CALCSERVER_PROC_NR,   "calc_server"   },
+// 577 edit end
 };
 
