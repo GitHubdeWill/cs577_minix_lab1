@@ -80,8 +80,13 @@
 #define VM_PROC_NR   ((endpoint_t) 8)   /* memory server */
 #define PFS_PROC_NR  ((endpoint_t) 9)  /* pipe filesystem */
 #define SCHED_PROC_NR ((endpoint_t) 10)	/* scheduler */
-#define LAST_SPECIAL_PROC_NR	11	/* An untyped version for
-                                           computation in macros.*/
+//577 edit start
+#define CALCSERVER_PROC_NR ((endpoint_t) 11)	/* calc server for cs577 */
+#define LAST_SPECIAL_PROC_NR	12	/* An untyped version for
+                                        computation in macros.*/
+//577 edit end
+// #define LAST_SPECIAL_PROC_NR	11	/* An untyped version for
+//                                            computation in macros.*/
 #define INIT_PROC_NR ((endpoint_t) LAST_SPECIAL_PROC_NR)  /* init
                                                         -- goes multiuser */
 #define NR_BOOT_MODULES (INIT_PROC_NR+1)
