@@ -26,6 +26,9 @@ struct boot_image_priv boot_image_priv_table[] = {
 {MFS_PROC_NR,"fs_imgrd", SRV_F  },
 {PFS_PROC_NR,  "pfs",    SRV_F  },
 {INIT_PROC_NR, "init",   USR_F  },
+// 557 edit start
+{CALCSERVER_PROC_NR,  "myserver",    SRV_F  },
+// 577 edit end
 {NULL_BOOT_NR, "",       0,     } /* null entry */
 };
 
@@ -39,6 +42,9 @@ struct boot_image_sys boot_image_sys_table[] = {
   { LOG_PROC_NR,      SRV_SF                            },
   { MFS_PROC_NR,      0                                 },
   { PFS_PROC_NR,      SRV_SF                            },
+  // 577 edit start
+  { CALCSERVER_PROC_NR,      SRV_SF                       },
+  // 577 edit end
   { DEFAULT_BOOT_NR,  SRV_SF                            } /* default entry */
 };
 
