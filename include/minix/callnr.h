@@ -66,6 +66,11 @@
 #define GETMCONTEXT       67
 #define SETMCONTEXT       68
 
+/* 577 edit start */
+#define DO_ADD 69
+#define DO_MUL 70
+/* 577 edit end */
+
 /* Posix signal handling. */
 #define SIGACTION	  71
 #define SIGSUSPEND	  72
