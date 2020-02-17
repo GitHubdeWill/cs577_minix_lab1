@@ -1,6 +1,6 @@
 # Makefile for Calc Server (CS)
-PROG=	calc_server
-SRCS=	main.c calc_server.c
+PROG=	calcserver
+SRCS=	main.c calcserver.c
 
 DPADD+=	${LIBSYS}
 LDADD+=	-lsys

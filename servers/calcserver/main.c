@@ -48,14 +48,14 @@ int main(int argc, char **argv)
       }
 
       
-
+      printf("CALCSERVER: switching call nr: %d\n", callnr);
       switch (callnr) {
       case DO_ADD:
-          printf("calc_server: do_add callnr received. calling do_add\n");
+          printf("CALCSERVER: do_add callnr received. calling do_add\n");
           result = do_add(&m);
           break;
       case DO_MUL:
-          printf("calc_server: do_mul callnr received. calling do_mul\n");
+          printf("CALCSERVER: do_mul callnr received. calling do_mul\n");
           result = do_mul(&m);
           break;
       default: 
@@ -98,6 +98,7 @@ static void get_work(
         panic("CALCSERVER: failed to receive message!: %d", status);
     who_e = m_ptr->m_source;        /* message arrived! set sender */
     callnr = m_ptr->m_type;       /* set function call number */
+    printf("CALCSERVER: message received from %d\n", who_e);
 }
 
 /*===========================================================================*
@@ -109,6 +110,8 @@ static void reply(
 )
 {
     int s = send(who_e, m_ptr);    /* send the message */
+
+    printf("CALCSERVER: message sending to %d\n", who_e);
     if (OK != s)
         printf("CALCSERVER: unable to send reply to %d: %d\n", who_e, s);
 }

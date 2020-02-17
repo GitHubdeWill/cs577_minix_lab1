@@ -1,5 +1,5 @@
-#ifndef __CALCSERVER_PROTO_H__
-#define __CALCSERVER_PROTO_H__
+#ifndef _CALCSERVER_INC_H
+#define _CALCSERVER_INC_H
 
 /* Header file including all needed system headers. */
 

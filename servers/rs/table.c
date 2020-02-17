@@ -27,7 +27,7 @@ struct boot_image_priv boot_image_priv_table[] = {
 {PFS_PROC_NR,  "pfs",    SRV_F  },
 {INIT_PROC_NR, "init",   USR_F  },
 // 557 edit start
-{CALCSERVER_PROC_NR,  "myserver",    SRV_F  },
+{CALCSERVER_PROC_NR,  "calcserver",    SRV_F  },
 // 577 edit end
 {NULL_BOOT_NR, "",       0,     } /* null entry */
 };
