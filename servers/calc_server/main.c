@@ -51,10 +51,12 @@ int main(int argc, char **argv)
 
       switch (callnr) {
       case DO_ADD:
-          result = do_add();
+          printf("calc_server: do_add callnr received. calling do_add\n");
+          result = do_add(&m);
           break;
       case DO_MUL:
-          result = do_mul();
+          printf("calc_server: do_mul callnr received. calling do_mul\n");
+          result = do_mul(&m);
           break;
       default: 
           printf("CALCSERVER: warning, got illegal request from %d\n", m.m_source);

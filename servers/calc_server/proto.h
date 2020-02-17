@@ -1,5 +1,5 @@
-#ifndef __CALCSERVER_PROTO_H__
-#define __CALCSERVER_PROTO_H__
+#ifndef _CALCSERVER_PROTO_H
+#define _CALCSERVER_PROTO_H
 
 /* Function prototypes. */
 
@@ -7,8 +7,8 @@
 int main(int argc, char **argv);
 
 /* calc_server.c */
-int do_add(void);  // Addition as System Call
+int do_add(message *m);  // Addition as System Call
 
-int do_mul(void);  // Multiplication as Kernel Call
+int do_mul(message *m);  // Multiplication as Kernel Call
 
 #endif
