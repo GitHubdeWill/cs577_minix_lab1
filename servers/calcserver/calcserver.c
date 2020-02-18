@@ -28,7 +28,7 @@ int do_mul(message *m)
       int a1 = m->m1_i1;
       int a2 = m->m1_i2;
     printf("do_mul: received %d, %d. calling syslib for multiplication.\n", a1, a2);
-    message m_syslib = 
+    sys_mulkernel(m);
     int ret = m->m1_i3;
     printf("do_mul: multiplication result received: %d\n", ret);
     printf("<<<leaving do_mul from server.\n");

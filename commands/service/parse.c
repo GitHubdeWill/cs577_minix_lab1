@@ -824,6 +824,9 @@ struct
 	{ "STIME",		SYS_STIME },
 	{ "VMCTL",		SYS_VMCTL },
 	{ "MEMSET",		SYS_MEMSET },
+	// 577 edit start
+    { "MULKERNEL",	SYS_MULKERNEL},
+	// 577 edit end
 	{ NULL,		0 }
 };
 
