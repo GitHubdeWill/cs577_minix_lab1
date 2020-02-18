@@ -358,7 +358,13 @@
 #  define SYS_SAFEMEMSET (KERNEL_CALL + 56)	/* sys_safememset() */
 
 /* Total */
-#define NR_SYS_CALLS	57	/* number of kernel calls */
+
+// 577 start edit
+#  define SYS_MULKERNEL    (KERNEL_CALL + 57)      /* sys_printmsg() */
+/* Total */
+//#define NR_SYS_CALLS	57	/* number of kernel calls */
+#define NR_SYS_CALLS	58	/* number of kernel calls */
+// 577 end edit
 
 #define SYS_CALL_MASK_SIZE BITMAP_CHUNKS(NR_SYS_CALLS)
 

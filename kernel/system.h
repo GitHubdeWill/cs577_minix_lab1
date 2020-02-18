@@ -207,5 +207,9 @@ int do_statectl(struct proc * caller, message *m_ptr);
 #define do_statectl NULL
 #endif
 
+// 577 edit start
+int do_mulkernel(struct proc * caller, message *m_ptr);
+// 577 edit end
+
 #endif	/* SYSTEM_H */
 

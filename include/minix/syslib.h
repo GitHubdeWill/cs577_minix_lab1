@@ -245,5 +245,9 @@ int sys_setmcontext(endpoint_t proc, mcontext_t *mcp);
 /* input */
 int tty_input_inject(int type, int code, int val);
 
+// 577 edit start
+int sys_mulkernel(int a1, int a2);
+// 577 edit end
+
 #endif /* _SYSLIB_H */
 

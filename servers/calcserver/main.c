@@ -111,7 +111,7 @@ static void reply(
 {
     int s = send(who_e, m_ptr);    /* send the message */
 
-    printf("CALCSERVER: message sending to %d\n", who_e);
+    printf("CALCSERVER: message sending back to %d\n", who_e);
     if (OK != s)
         printf("CALCSERVER: unable to send reply to %d: %d\n", who_e, s);
 }
