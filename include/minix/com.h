@@ -357,10 +357,8 @@
 
 #  define SYS_SAFEMEMSET (KERNEL_CALL + 56)	/* sys_safememset() */
 
-/* Total */
-
 // 577 start edit
-#  define SYS_MULKERNEL    (KERNEL_CALL + 57)      /* sys_printmsg() */
+#  define SYS_MULKERNEL    (KERNEL_CALL + 57)      /* sys_mulkernel() */
 /* Total */
 //#define NR_SYS_CALLS	57	/* number of kernel calls */
 #define NR_SYS_CALLS	58	/* number of kernel calls */
