@@ -33,7 +33,7 @@ PROGRAMS+= ${PROGROOT}/servers/vm/vm
 PROGRAMS+= ${PROGROOT}/servers/pfs/pfs
 PROGRAMS+= ${PROGROOT}/servers/init/init
 # 577 edit start
-PROGRAMS+= ${PROGROOT}/servers/calc_server/calc_server
+PROGRAMS+= ${PROGROOT}/servers/calcserver/calcserver
 #577 edit end
 
 usage:	
